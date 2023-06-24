@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.spectrum.GestionDeTareas.mapper.UsuarioMapper">
+
+    <insert id="insertUsuario" parameterType="com.spectrum.GestionDeTareas.model.Usuario">
+        <!-- Consulta SQL para insertar un usuario -->
+        INSERT INTO usuarios (nombre, correo, contrasena) VALUES (#{nombre}, #{correo}, #{contrasena} )
+
+    </insert>
+
+    <update id="updateUsuario" parameterType="com.spectrum.GestionDeTareas.model.Usuario">
+        <!-- Consulta SQL para actualizar un usuario -->
+        UPDATE usuarios SET nombre = #{nombre}, correo = #{correo} , contrasena = #{contrasena} WHERE id = #{id}
+
+    </update>
+
+    <delete id="deleteUsuario" parameterType="com.spectrum.GestionDeTareas.model.Usuario">
+        <!-- Consulta SQL para eliminar un usuario -->
+        DELETE FROM usuarios WHERE id = #{id}
+    </delete>
+
+    <select id="getUsuarioById" parameterType="int" resultType="com.spectrum.GestionDeTareas.model.Usuario">
+        <!-- Consulta SQL para obtener un usuario por su ID -->
+        SELECT * FROM usuarios WHERE id = #{id} ORDER BY id
+    </select>
+    <select id="getAllUsuario"  parameterType="int" resultType="com.spectrum.GestionDeTareas.model.Usuario">
+        <!-- Consulta SQL para obtener todos los usuarios -->
+        SELECT * FROM usuarios ORDER BY id
+    </select>
+    <select id="getUsuarioByCriterio" resultType="com.spectrum.GestionDeTareas.model.Usuario">
+        <!-- Consulta SQL para obtener un usuario por un criterio específico -->
+        SELECT * FROM usuarios WHERE ${criterio} = #{valor} ORDER BY id
+    </select>
+
+</mapper>
