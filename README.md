@@ -33,17 +33,6 @@ Demostrar habilidades en el desarrollo de APIs REST con Java puro, integrando:
 
 ---
 
-## 🏗️ Estructura del código
-
-# 🚀 Gestión de Tareas - REST API con Java, MyBatis y Jersey
-
-[![Java](https://img.shields.io/badge/Java-11+-%23f89820?logo=java)](https://www.oracle.com/java/)
-[![MyBatis](https://img.shields.io/badge/MyBatis-3.5+-%23A91E22?logo=apache)](https://mybatis.org/mybatis-3/)
-[![Jersey](https://img.shields.io/badge/Jersey-3.0+-%2376B9E0?logo=eclipse)](https://eclipse-ee4j.github.io/jersey/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15+-%23316192?logo=postgresql)](https://www.postgresql.org/)
-[![Maven](https://img.shields.io/badge/Maven-3.8+-%23C71A36?logo=apache-maven)](https://maven.apache.org/)
-[![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
-
 ## 📌 Descripción
 
 Sistema completo de gestión de tareas con usuarios y etiquetas, que incluye:
